@@ -1,11 +1,11 @@
 <script setup lang="ts">
+import type { LoginParams } from './type'
+import pageBubble from '@/utils/page-bubble'
 import { LockOutlined, MobileOutlined, UserOutlined } from '@ant-design/icons-vue'
 import { delayTimer } from '@v-c/utils'
-import { loginApi } from './login.api'
-import type { LoginParams } from './type'
 import GlobalLayoutFooter from '~/layouts/components/global-footer/index.vue'
 import { getQueryParam } from '~/utils/tools'
-import pageBubble from '@/utils/page-bubble'
+import { loginApi } from './login.api'
 
 const message = useMessage()
 const notification = useNotification()
@@ -32,7 +32,7 @@ const errorAlert = shallowRef(false)
 const { counter, pause, reset, resume, isActive } = useInterval(1000, {
   controls: true,
   immediate: false,
-  callback(count) {
+  callback(count: number) {
     if (count) {
       if (count === resetCounter)
         pause()

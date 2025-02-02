@@ -1,7 +1,7 @@
 import type { LayoutSetting } from '~@/stores/app'
 
 export default {
-  title: '集装箱货车财务系统',
+  title: 'vue3-ts-antd-template',
   theme: 'light',
   logo: '/logo.png',
   collapsed: true,
@@ -25,7 +25,7 @@ export default {
   leftCollapsed: true,
   compactAlgorithm: false,
   headerHeight: 48,
-  copyright: '青岛汇天时越科技有限公司',
+  copyright: 'vue3-ts-antd-template',
   animationName: 'slide-fadein-right',
 } as LayoutSetting
 

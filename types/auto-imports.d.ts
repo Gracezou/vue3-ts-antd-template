@@ -70,6 +70,7 @@ declare global {
   const onBeforeUpdate: typeof import('vue')['onBeforeUpdate']
   const onClickOutside: typeof import('@vueuse/core')['onClickOutside']
   const onDeactivated: typeof import('vue')['onDeactivated']
+  const onElementRemoval: typeof import('@vueuse/core')['onElementRemoval']
   const onErrorCaptured: typeof import('vue')['onErrorCaptured']
   const onKeyStroke: typeof import('@vueuse/core')['onKeyStroke']
   const onLongPress: typeof import('@vueuse/core')['onLongPress']
@@ -162,6 +163,7 @@ declare global {
   const useColorMode: typeof import('@vueuse/core')['useColorMode']
   const useCompConsumer: typeof import('../src/composables/comp-consumer')['useCompConsumer']
   const useConfirmDialog: typeof import('@vueuse/core')['useConfirmDialog']
+  const useCountdown: typeof import('@vueuse/core')['useCountdown']
   const useCounter: typeof import('@vueuse/core')['useCounter']
   const useCssModule: typeof import('vue')['useCssModule']
   const useCssVar: typeof import('@vueuse/core')['useCssVar']
@@ -258,6 +260,7 @@ declare global {
   const usePreferredDark: typeof import('@vueuse/core')['usePreferredDark']
   const usePreferredLanguages: typeof import('@vueuse/core')['usePreferredLanguages']
   const usePreferredReducedMotion: typeof import('@vueuse/core')['usePreferredReducedMotion']
+  const usePreferredReducedTransparency: typeof import('@vueuse/core')['usePreferredReducedTransparency']
   const usePrevious: typeof import('@vueuse/core')['usePrevious']
   const usePut: typeof import('../src/composables/api')['usePut']
   const useQueryBreakpoints: typeof import('../src/composables/query-breakpoints')['useQueryBreakpoints']
@@ -266,6 +269,7 @@ declare global {
   const useResizeObserver: typeof import('@vueuse/core')['useResizeObserver']
   const useRoute: typeof import('vue-router')['useRoute']
   const useRouter: typeof import('vue-router')['useRouter']
+  const useSSRWidth: typeof import('@vueuse/core')['useSSRWidth']
   const useScreenOrientation: typeof import('@vueuse/core')['useScreenOrientation']
   const useScreenSafeArea: typeof import('@vueuse/core')['useScreenSafeArea']
   const useScriptTag: typeof import('@vueuse/core')['useScriptTag']
@@ -343,4 +347,19 @@ declare global {
   // @ts-ignore
   export type { Component, ComponentPublicInstance, ComputedRef, DirectiveBinding, ExtractDefaultPropTypes, ExtractPropTypes, ExtractPublicPropTypes, InjectionKey, PropType, Ref, MaybeRef, MaybeRefOrGetter, VNode, WritableComputedRef } from 'vue'
   import('vue')
+  // @ts-ignore
+  export type { LayoutSetting } from '../src/stores/app'
+  import('../src/stores/app')
+  // @ts-ignore
+  export type { MultiTabItem } from '../src/stores/multi-tab'
+  import('../src/stores/multi-tab')
+  // @ts-ignore
+  export type { FormModalActions } from '../src/composables/form-modal-actions'
+  import('../src/composables/form-modal-actions')
+  // @ts-ignore
+  export type { TableActions } from '../src/composables/table-actions'
+  import('../src/composables/table-actions')
+  // @ts-ignore
+  export type { TableRowSelectionsProps, TableQueryOptions } from '../src/composables/table-query'
+  import('../src/composables/table-query')
 }
