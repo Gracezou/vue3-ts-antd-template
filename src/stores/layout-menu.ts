@@ -1,5 +1,5 @@
-import { isUrl } from '@v-c/utils'
 import type { MenuData, MenuDataItem } from '~@/pages/common/type'
+import { isUrl } from '@v-c/utils'
 import router from '~@/router'
 
 function toMapMenuData(menuData: MenuData, menuDataMap: Map<string, MenuDataItem>, matched: MenuDataItem[] = []) {

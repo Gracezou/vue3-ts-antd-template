@@ -1,6 +1,6 @@
 import type { RouteRecordRaw } from 'vue-router'
-import { cloneDeep, truncate } from 'lodash-es'
 import type { MenuData, MenuDataItem } from '~@/pages/common/type'
+import { cloneDeep, truncate } from 'lodash-es'
 
 /**
  * 生成树结构的路由
@@ -191,7 +191,7 @@ function _addSlashToRouteComponent(routeList: MenuData) {
     const component = route.component
     if (component)
       route.component = component.startsWith('/') ? component : `/${component}`
-    // eslint-disable-next-line ts/no-unused-expressions
+
     route.children && _addSlashToRouteComponent(route.children)
   })
   return routeList

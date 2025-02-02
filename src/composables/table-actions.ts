@@ -1,6 +1,6 @@
+import type { ResponseBody } from '~@/utils/request'
 import { Modal } from 'ant-design-vue'
 import { assign } from 'lodash-es'
-import type { ResponseBody } from '~@/utils/request'
 
 interface BO {
   id?: string

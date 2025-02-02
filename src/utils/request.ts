@@ -1,11 +1,11 @@
 import type { AxiosError, AxiosInstance, AxiosRequestConfig, AxiosResponse, InternalAxiosRequestConfig } from 'axios'
 import axios from 'axios'
-import { AxiosLoading } from './loading'
-import { ObjectDeleteEmptyProperty } from './tools'
-import { mockApi } from './mock-api'
-import { REQUEST_HEADER_TOKEN_KEY, useAuthorization } from '~/composables/authorization'
 import { ContentTypeEnum, RequestEnum } from '~#/http-enum'
+import { REQUEST_HEADER_TOKEN_KEY, useAuthorization } from '~/composables/authorization'
 import router from '~/router'
+import { AxiosLoading } from './loading'
+import { mockApi } from './mock-api'
+import { ObjectDeleteEmptyProperty } from './tools'
 
 export interface ResponseBody<T = any> {
   code: number

@@ -1,6 +1,6 @@
 import type { FormInstance } from 'ant-design-vue'
-import { assign } from 'lodash-es'
 import type { ShallowReactive } from 'vue'
+import { assign } from 'lodash-es'
 import { ObjectInitTransform, ObjectUpdateProperty } from '~@/utils/tools'
 
 interface BO {

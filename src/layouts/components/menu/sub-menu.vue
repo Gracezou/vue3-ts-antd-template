@@ -1,7 +1,7 @@
 <script setup lang="ts">
+import type { MenuDataItem } from '~@/pages/common/type'
 import { isUrl } from '@v-c/utils'
 import AsyncIcon from './async-icon.vue'
-import type { MenuDataItem } from '~@/pages/common/type'
 
 withDefaults(defineProps<{ item: MenuDataItem, link?: boolean }>(), {
   link: true,

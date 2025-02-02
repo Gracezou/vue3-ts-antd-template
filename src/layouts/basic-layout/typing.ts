@@ -1,6 +1,6 @@
 import type { ExtractPropTypes } from 'vue'
-import { arrayType, booleanType, eventType, numberType, stringType } from '@v-c/utils'
 import type { MenuData } from '~@/pages/common/type'
+import { arrayType, booleanType, eventType, numberType, stringType } from '@v-c/utils'
 
 export type CheckedType = boolean | string | number
 

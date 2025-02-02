@@ -1,7 +1,7 @@
-import { runEvent } from '@v-c/utils'
 import type { SelectEventHandler } from 'ant-design-vue/es/menu/src/interface'
-import type { ProLayoutProps } from './typing'
 import type { MenuData, MenuDataItem } from '~@/pages/common/type'
+import type { ProLayoutProps } from './typing'
+import { runEvent } from '@v-c/utils'
 
  type Key = string | number
 export interface ProLayoutProviderMethods {

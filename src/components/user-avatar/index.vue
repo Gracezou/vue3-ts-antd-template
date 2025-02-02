@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { LockOutlined, LogoutOutlined } from '@ant-design/icons-vue'
 import type { FormInstance, Rule } from 'ant-design-vue/es/form'
+import { LockOutlined, LogoutOutlined } from '@ant-design/icons-vue'
 import { ObjectInitTransform } from '~@/utils/tools'
 
 const message = useMessage()

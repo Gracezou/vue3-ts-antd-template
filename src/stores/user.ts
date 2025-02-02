@@ -1,5 +1,5 @@
-import { updateUserData } from '~@/pages/common/login.api'
 import type { DictItem, MenuData, UserInfo } from '~@/pages/common/type'
+import { updateUserData } from '~@/pages/common/login.api'
 import { rootRoute, routeData } from '~@/router/constant'
 import { generateTreeRoutes } from '~@/router/generate-route'
 import { jwtParse } from '~@/utils/tools'

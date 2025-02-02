@@ -1,13 +1,13 @@
 <script lang="ts" setup>
 import type { CSSProperties } from 'vue'
+import type { RouteLocationNormalized } from 'vue-router'
+import type { MultiTabItem } from '~@/stores/multi-tab'
 import {
   CloseOutlined,
   MoreOutlined,
   ReloadOutlined,
 } from '@ant-design/icons-vue'
-import type { RouteLocationNormalized } from 'vue-router'
 import { listenerRouteChange, removeRouteListener } from '~@/utils/route-listener'
-import type { MultiTabItem } from '~@/stores/multi-tab'
 
 const multiTabStore = useMultiTab()
 const { list, activeKey } = storeToRefs(multiTabStore)

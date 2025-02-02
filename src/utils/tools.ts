@@ -1,6 +1,6 @@
-import { cloneDeep, get, has, isArray, isEmpty, isNumber, isObjectLike, isString } from 'lodash-es'
 import type { BaseOptionType } from 'ant-design-vue/es/select'
 import router from '@/router'
+import { cloneDeep, get, has, isArray, isEmpty, isNumber, isObjectLike, isString } from 'lodash-es'
 
 /**
  * 从url中获取参数的值
@@ -43,7 +43,7 @@ export function ObjectInitTransform(obj: any): any {
           obj[key] = ''
           break
         case 'object':
-          // eslint-disable-next-line ts/no-unused-expressions
+
           Array.isArray(obj[key]) ? (obj[key] = []) : ObjectInitTransform(obj[key])
           break
         case 'boolean':
