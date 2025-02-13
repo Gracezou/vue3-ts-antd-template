@@ -12,7 +12,9 @@ const Comp = computed(() => {
     if (node)
       return node
   }
-  return (icons as any)[props.icon as string]
+  // 确保 `icons[props.icon]` 存在
+  const IconComponent = (icons as any)[props.icon as string]
+  return IconComponent || null // 避免 undefined
 })
 </script>
 

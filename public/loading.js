@@ -3,10 +3,10 @@
  * 解决首次加载时白屏的问题
  */
 (function () {
-  const div = document.createElement("div")
+  const div = document.createElement("div");
   const body = document.querySelector("body");
-  body.appendChild(div)
-  div.setAttribute("id","loading-app")
+  body.appendChild(div);
+  div.setAttribute("id", "loading-app");
   if (div && div.innerHTML === '') {
     div.innerHTML = `
       <style>
@@ -59,13 +59,10 @@
           text-align: center;
           list-style: none;
           opacity: 0;
-          -webkit-transition: -webkit-transform 0.3s
-            cubic-bezier(0.78, 0.14, 0.15, 0.86);
-          transition: -webkit-transform 0.3s
-            cubic-bezier(0.78, 0.14, 0.15, 0.86);
+          -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+          transition: -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
           transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
-          transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86),
-            -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+          transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86), -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
           -webkit-font-feature-settings: "tnum";
           font-feature-settings: "tnum";
         }
@@ -98,7 +95,7 @@
           -ms-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
           opacity: 0.3;
-          -webkit-animation: antspinmove 1s infinite linear alternate;
+          -webkit-animation: antSpinMove 1s infinite linear alternate;
           animation: antSpinMove 1s infinite linear alternate;
         }
 
@@ -132,7 +129,7 @@
           -webkit-transform: rotate(45deg);
           -ms-transform: rotate(45deg);
           transform: rotate(45deg);
-          -webkit-animation: antrotate 1.2s infinite linear;
+          -webkit-animation: antRotate 1.2s infinite linear;
           animation: antRotate 1.2s infinite linear;
         }
 
@@ -145,13 +142,6 @@
         .ant-spin-lg .ant-spin-dot i {
           width: 14px;
           height: 14px;
-        }
-
-        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-          .ant-spin-blur {
-            background: #fff;
-            opacity: 0.5;
-          }
         }
 
         @-webkit-keyframes antSpinMove {
